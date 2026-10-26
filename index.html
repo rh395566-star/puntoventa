@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nats | Punto de Venta de Joyería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="topbar">
+    <a href="#inicio" class="brand"><span class="brand-text">nats</span><span class="brand-star">✦</span></a>
+    <nav class="menu">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#ticket">Ticket</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#ticket" class="btn-cart">Venta actual <span class="badge">3</span></a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow"></div>
+    <div class="hero-logo"><span class="brand-text">nats</span><span class="brand-star">✦</span></div>
+    <p class="eyebrow">Joyería fina · Punto de venta</p>
+    <h1>Brilla con <em>elegancia</em><br>vende con estilo</h1>
+    <p class="hero-text">Gestiona tus ventas de anillos, collares, pulseras y aretes en un sistema hermoso y rápido.</p>
+    <div class="hero-actions">
+      <a href="#catalogo" class="btn btn-gold">Ver catálogo</a>
+      <a href="#ticket" class="btn btn-ghost">Abrir ticket</a>
+    </div>
+    <div class="stats">
+      <div><strong>248</strong><span>Piezas</span></div>
+      <div><strong>36</strong><span>Ventas hoy</span></div>
+      <div><strong>$48,900</strong><span>Ingresos</span></div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="pos">
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo" id="catalogo">
+      <div class="section-head">
+        <p class="eyebrow">Colección</p>
+        <h2>Catálogo de piezas</h2>
+      </div>
+
+      <!-- Filtros solo con CSS -->
+      <input type="radio" name="filtro" id="f-todo" checked>
+      <input type="radio" name="filtro" id="f-anillos">
+      <input type="radio" name="filtro" id="f-collares">
+      <input type="radio" name="filtro" id="f-pulseras">
+      <input type="radio" name="filtro" id="f-aretes">
+
+      <div class="filtros">
+        <label for="f-todo">Todo</label>
+        <label for="f-anillos">Anillos</label>
+        <label for="f-collares">Collares</label>
+        <label for="f-pulseras">Pulseras</label>
+        <label for="f-aretes">Aretes</label>
+      </div>
+
+      <div class="grid">
+
+        <article class="card" data-cat="anillos">
+          <span class="tag">Nuevo</span>
+          <div class="pieza"><div class="art anillo"></div></div>
+          <div class="info">
+            <small>Anillos · Oro 14k</small>
+            <h3>Anillo Solitario Imperial</h3>
+            <div class="precio-row"><span class="precio">$12,500</span><span
